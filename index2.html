@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>CSS Grid</title>
+    <style>
+      .wrapper {
+        display: grid;
+        /*grid-template-columns: 1fr 2fr 1fr;*/
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+        /*grid-auto-rows: 100px;*/
+        grid-auto-rows: minmax(100px, auto);
+      }
+      
+      /* these have nothing to do with the grid*/
+      .wrapper > div {
+        background: #eee;
+        padding: 1em;
+      }
+      .wrapper > div:nth-child(odd) {
+        background: #ddd;
+      }
+      .inside{
+        text-align:center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div>Lorem ipsum dolor sit</div>
+      <div>
+        Lorem ipsum dolor sit mi proin sed libero enim sed faucibus turpis in eu
+        mi bibendum neque egestas congue quisque egestas diam in arcu cursus
+        euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero
+        volutpat sed cras ornare arcu dui vivamus arcumi proin sed libero enim
+        sed faucibus turpis in eu mi bibendum neque egestas congue quisque
+        egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar
+        mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus
+        arcu
+      </div>
+      <div class="inside">
+        <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-6vg4o5ArPms%2FTm270SSL4xI%2FAAAAAAAAAQg%2FcFnCJs_aAZA%2Fs1600%2Fsasuke_vector_by_gerbilbob.jpg&f=1&nofb=1" width=200px height=200px/>
+        <br/>
+        <h3>Sasuke</h3>
+        
+      </div>
+      <div>Lorem ipsum dolor sit</div>
+      <div>Lorem ipsum dolor sit</div>
+      <div>Lorem ipsum dolor sit</div>
+      <div>Lorem ipsum dolor sit</div>
+    </div>
+  </body>
+</html>
